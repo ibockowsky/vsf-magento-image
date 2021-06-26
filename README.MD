@@ -12,17 +12,17 @@ Everything except component name and its default property is optional!
     "imageSizes": {
       "[component name or just desired name for this sizing]": {
         "default": {
-          "size": "[X]/[Y]"
+          "size": "<x>/<y>"
         },
         "mobile": {
-          "size": "[Y]/[Y]",
-          "media": "([max-width/min-width]: [SIZE]])",
-          "extra_sizes": "OPTIONAL || [['[X]/[Y]', '[SIZE]']]"
+          "size": "<x>/<y>",
+          "media": "<media_query>",
+          "extra_sizes": "[["<x>/<y>", "<size>"], [...]]" // OPTIONAL
         },
         "desktop": {
           "size": "[X]/[Y]",
           "media": "([max-width/min-width]: [size]])",
-          "extra_sizes": "OPTIONAL || [['[X]/[Y]', '[SIZE]']]"
+          "extra_sizes": "[["<x>/<y>", "<size>"], [...]]" // OPTIONAL
         }
       }
     }
