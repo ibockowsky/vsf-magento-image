@@ -1,0 +1,1 @@
+# VSF Magento Image

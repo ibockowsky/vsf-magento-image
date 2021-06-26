@@ -1,0 +1,26 @@
+{
+  "name": "vsf-magento-image",
+  "version": "0.0.1",
+  "description": "Facebook Pixel module for Vue Storefront",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/new-fantastic/magento-image.git"
+  },
+  "keywords": [
+    "magento-image",
+    "Vue",
+    "Storefront",
+    "Facebook",
+    "Pixel"
+  ],
+  "author": "fifciu <filip@newfantastic.com>, allozaur <alek@newfantastic.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/new-fantastic/magento-image/issues"
+  },
+  "homepage": "https://github.com/new-fantastic/magento-image#readme"
+}
