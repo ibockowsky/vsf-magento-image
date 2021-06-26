@@ -28,3 +28,5 @@ const mImageSet = (path, componentName) => {
 
   return source
 }
+
+export { mImage, mImageSet }
