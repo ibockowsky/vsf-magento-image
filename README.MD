@@ -10,7 +10,7 @@ Everything except component name and its default property is optional!
 {
   "images": {
     "imageSizes": {
-      [component name or just desired name for this sizing]: {
+      "[component name or just desired name for this sizing]": {
         "default": {
           "size": "[X]/[Y]"
         },
@@ -34,9 +34,7 @@ Everything except component name and its default property is optional!
 
 ```json
 {
-  //...
   "images": {
-    //...
     "imageSizes": {
       "productTile": {
         "default": {
