@@ -5,7 +5,7 @@ const { imageSizes: _SIZES } = images
 
 const mImageUrl = (path, size) => `${api.url}/img/${size}/resize/${path}`
 const mImage = (path, componentName) => {
-  const size = _SIZES[componentName].default
+  const size = _SIZES[componentName].default.size
   return mImageUrl(path, size)
 }
 const mImageSet = (path, componentName) => {
