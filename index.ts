@@ -11,8 +11,8 @@ export const VsfMagentoImage: StorefrontModule = function ({ appConfig }) {
     Logger.warn('VSF Magento Image extensions is not working. Ensure you\'ve defined "imageSizes" in config.', 'VSF-Magento-Image')()
     return
   }
-  once('__VUE_EXTEND_GTM__', () => {
-    Vue.prototype.$mImage = (path: string, componentName: string) => mImage(path, componentName)
-    Vue.prototype.$mImageSet = (path: string, componentName: string) => mImageSet(path, componentName)
+  once('__VUE_EXTEND_VMI__', () => {
+    Vue.prototype.$mImage = (path: string, componentName: string): string => mImage(path, componentName)
+    Vue.prototype.$mImageSet = (path: string, componentName: string): any => mImageSet(path, componentName)
   })
 }
