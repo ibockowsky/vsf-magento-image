@@ -12,8 +12,7 @@ const mImageSet = (path, componentName) => {
   const sizes = _SIZES[componentName]
   const source = _DIRECTION.map(device => {
     if (!sizes.hasOwnProperty(device)) return
-    const { media, size, extraSizes = null } = sizes
-
+    const { media, size, extraSizes = null } = sizes[device]
     const srcset = !extraSizes
       ? mImageUrl(path, size)
       : `${mImageUrl(path, size)}, ` +
