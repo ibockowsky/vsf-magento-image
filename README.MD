@@ -17,12 +17,12 @@ Everything except component name and its default property is optional!
         "mobile": {
           "size": "<x>/<y>",
           "media": "<media_query>",
-          "extra_sizes": "[["<x>/<y>", "<size>"], [...]]" // OPTIONAL
+          "extra_sizes": "[[" < x > /<y>", "<size>"], [...]]" / / OPTIONAL
         },
         "desktop": {
           "size": "[X]/[Y]",
           "media": "([max-width/min-width]: [size]])",
-          "extra_sizes": "[["<x>/<y>", "<size>"], [...]]" // OPTIONAL
+          "extra_sizes": "[[" < x > /<y>", "<size>"], [...]]" / / OPTIONAL
         }
       }
     }
@@ -123,7 +123,7 @@ It returns **source set** with parsed URLs for paths and set up sizing for speci
 
 ### As component
 
-Usage is the same as above, but if u decided to use it as a component, you have to input in it **componentName**, so you want have to call it every time you use this function.
+Usage is the same as above, but if u decided to use it as a component, you have to input in it **componentName**, so you won't have to call it every time you use this function.
 
 ```js
 import magentoImage from 'modules/vsf-magento-image/mixins/magentoImage.js'
