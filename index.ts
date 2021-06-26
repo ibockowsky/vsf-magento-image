@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import { mImage, mImageSet } from './logic'
 import { once } from '@vue-storefront/core/helpers'
 import { Logger } from '@vue-storefront/core/lib/logger'
 import { StorefrontModule } from '@vue-storefront/core/lib/modules'
@@ -11,6 +12,7 @@ export const VsfMagentoImage: StorefrontModule = function ({ appConfig }) {
     return
   }
   once('__VUE_EXTEND_GTM__', () => {
-    //
+    Vue.prototype.$mImage = (path: string, componentName: string) => mImage(path, componentName)
+    Vue.prototype.$mImageSet = (path: string, componentName: string) => mImageSet(path, componentName)
   })
 }
