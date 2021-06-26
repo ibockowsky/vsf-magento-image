@@ -3,9 +3,7 @@
 ## Basic config
 
 ```json
-...
 "images": {
-  ...
   "imageSizes": {
     "productTile": {
         "default": {
@@ -31,7 +29,7 @@
         },
         "desktop": {
           "size": "/480/480",
-          "extra_size": [["/780/780", "2x"]],,
+          "extra_size": [["/780/780", "2x"]],
           "media": "(min-width: 768px)"
         }
       }
